@@ -16,7 +16,7 @@ export default function Portfolio() {
                 Обо мне
               </a>
               <a href="#services" className="text-slate-600 hover:text-slate-900 transition-colors">
-                Услуги
+                Тарифы
               </a>
               <a href="#projects" className="text-slate-600 hover:text-slate-900 transition-colors">
                 Проекты
@@ -34,21 +34,21 @@ export default function Portfolio() {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">Открыт для проектов</Badge>
+              <Badge className="mb-4 bg-blue-100 text-blue-800 hover:bg-blue-200">Бесплатный старт · Апгрейд в любой момент</Badge>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-                Помогаю разработчикам <span className="text-blue-600">создавать</span> веб-приложения быстрее
+                Начните <span className="text-blue-600">бесплатно</span>, платите только за то, что нужно
               </h1>
               <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-                Специализируюсь на создании современных, масштабируемых веб-приложений с использованием
-                передовых технологий. Превращу ваши идеи в мощные цифровые решения.
+                Разработка веб-приложений по freemium-модели: базовые задачи — бесплатно,
+                а расширенные возможности и приоритетную поддержку подключаете тогда, когда проект вырастет.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  Начать проект
+                  Начать бесплатно
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
                 <Button variant="outline" size="lg">
-                  Смотреть работы
+                  Смотреть тарифы
                 </Button>
               </div>
             </div>
@@ -57,15 +57,15 @@ export default function Portfolio() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Code className="h-6 w-6" />
-                    <span className="font-semibold">Современный стек</span>
+                    <span className="font-semibold">Бесплатный тариф без карты</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Zap className="h-6 w-6" />
-                    <span className="font-semibold">Быстрая разработка</span>
+                    <span className="font-semibold">Апгрейд в один клик</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Users className="h-6 w-6" />
-                    <span className="font-semibold">Решения для разработчиков</span>
+                    <span className="font-semibold">Оплата только за нужное</span>
                   </div>
                 </div>
               </div>
@@ -80,17 +80,17 @@ export default function Portfolio() {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Обо мне</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Увлеченный full-stack разработчик с экспертизой в современных веб-технологиях
+              Full-stack разработчик, который делает старт проекта доступным для каждого
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Создаю будущее веб-разработки</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Freemium-подход к разработке</h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                За 5+ лет опыта в веб-разработке я помог десяткам разработчиков и стартапов
-                воплотить их идеи в жизнь. Мой фокус — создание эффективных, масштабируемых
-                и поддерживаемых решений с использованием актуальных технологий.
+                Я убеждён, что попробовать должно быть просто и бесплатно. Базовые задачи —
+                вёрстку, простые правки и консультацию — вы получаете без оплаты. А когда проект
+                растёт, подключаете платные возможности: сложную логику, интеграции и приоритетную поддержку.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div>
@@ -128,9 +128,9 @@ export default function Portfolio() {
       <section id="services" className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Услуги</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Тарифы</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Полный спектр услуг веб-разработки для ускорения вашего проекта
+              Начните бесплатно и переходите на платный тариф, когда проект будет готов расти
             </p>
           </div>
 
@@ -140,36 +140,41 @@ export default function Portfolio() {
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <Code className="h-6 w-6 text-blue-600" />
                 </div>
-                <CardTitle>Full-Stack разработка</CardTitle>
+                <CardTitle>Free</CardTitle>
+                <div className="text-3xl font-bold text-slate-900 my-2">0 ₽</div>
                 <CardDescription>
-                  Комплексная разработка веб-приложений с использованием современных фреймворков и лучших практик.
+                  Идеальный старт, чтобы попробовать без вложений и рисков.
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-slate-600">
-                  <li>* React/Next.js приложения</li>
-                  <li>* Разработка и интеграция API</li>
-                  <li>* Проектирование баз данных</li>
-                  <li>* Аутентификация и безопасность</li>
+                <ul className="space-y-2 text-sm text-slate-600 mb-6">
+                  <li>* Лендинг или простой сайт</li>
+                  <li>* Базовая вёрстка и правки</li>
+                  <li>* Консультация 30 минут</li>
+                  <li>* Поддержка в течение недели</li>
                 </ul>
+                <Button variant="outline" className="w-full">Начать бесплатно</Button>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="border-2 border-blue-600 shadow-xl hover:shadow-2xl transition-shadow relative">
+              <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white hover:bg-blue-600">Популярный</Badge>
               <CardHeader>
                 <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                   <Zap className="h-6 w-6 text-green-600" />
                 </div>
-                <CardTitle>Оптимизация</CardTitle>
-                <CardDescription>Ускорение существующих приложений и улучшение пользовательского опыта.</CardDescription>
+                <CardTitle>Pro</CardTitle>
+                <div className="text-3xl font-bold text-slate-900 my-2">от 29 000 ₽</div>
+                <CardDescription>Для растущих проектов, которым нужна серьёзная функциональность.</CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-slate-600">
-                  <li>* Code Splitting и Lazy Loading</li>
-                  <li>* Оптимизация размера бандла</li>
-                  <li>* SEO и Core Web Vitals</li>
-                  <li>* Мониторинг производительности</li>
+                <ul className="space-y-2 text-sm text-slate-600 mb-6">
+                  <li>* Full-stack веб-приложение</li>
+                  <li>* Интеграции и API</li>
+                  <li>* База данных и авторизация</li>
+                  <li>* Приоритетная поддержка</li>
                 </ul>
+                <Button className="w-full bg-blue-600 hover:bg-blue-700">Выбрать Pro</Button>
               </CardContent>
             </Card>
 
@@ -178,16 +183,18 @@ export default function Portfolio() {
                 <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-purple-600" />
                 </div>
-                <CardTitle>Менторство</CardTitle>
-                <CardDescription>Индивидуальное наставничество для развития навыков разработчиков.</CardDescription>
+                <CardTitle>Enterprise</CardTitle>
+                <div className="text-3xl font-bold text-slate-900 my-2">Индивидуально</div>
+                <CardDescription>Комплексные решения под ключ для бизнеса и команд.</CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-slate-600">
-                  <li>* Code Review и лучшие практики</li>
-                  <li>* Планирование архитектуры</li>
-                  <li>* Развитие карьеры</li>
-                  <li>* Подготовка к собеседованиям</li>
+                <ul className="space-y-2 text-sm text-slate-600 mb-6">
+                  <li>* Сложная архитектура и highload</li>
+                  <li>* Выделенная команда</li>
+                  <li>* SLA и гарантии</li>
+                  <li>* Персональный менеджер</li>
                 </ul>
+                <Button variant="outline" className="w-full">Обсудить проект</Button>
               </CardContent>
             </Card>
           </div>
@@ -200,7 +207,7 @@ export default function Portfolio() {
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">Избранные проекты</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Недавние работы, которые помогли разработчикам создать отличные приложения
+              Проекты, которые начинались на бесплатном тарифе и выросли в полноценные продукты
             </p>
           </div>
 
@@ -292,9 +299,9 @@ export default function Portfolio() {
       <section id="contact" className="py-20 bg-slate-900 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Создадим что-то потрясающее</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Начните бесплатно уже сегодня</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Готовы ускорить процесс разработки? Давайте обсудим ваш проект.
+              Оставьте заявку — стартуем на бесплатном тарифе и подключим платные возможности, когда понадобится.
             </p>
           </div>
 
@@ -302,8 +309,8 @@ export default function Portfolio() {
             <div>
               <h3 className="text-2xl font-bold mb-6">Связаться со мной</h3>
               <p className="text-slate-300 mb-8 leading-relaxed">
-                Будь то стартап, которому нужен MVP, или компания, желающая модернизировать
-                технологический стек — я помогу вам добиться успеха.
+                Не уверены, какой тариф подойдёт? Напишите — вместе начнём с бесплатного
+                и определим, когда стоит переходить на Pro или Enterprise.
               </p>
 
               <div className="space-y-4">
